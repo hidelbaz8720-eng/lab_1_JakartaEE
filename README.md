@@ -28,41 +28,6 @@ Le projet est organisé en trois couches principales :
 - **Présentation** : responsable de l'exécution et de l'affichage du résultat.
 
 
-
-##  Technologies utilisées
-
-- Java
-- Eclipse IDE
-- Java Reflection API
-- Interfaces Java
-- Fichier de configuration TXT
-
----
-
-## ⚙️ Fonctionnement
-
-### 1. Couche DAO
-
-L'interface `IDao` définit une méthode permettant de récupérer une valeur numérique.
-
-```java
-public interface IDao {
-    double getValue();
-}
-```
-
-La classe `DaoImpl` implémente cette interface et retourne une valeur fixe.
-
-```java
-public class DaoImpl implements IDao {
-
-    @Override
-    public double getValue() {
-        return 100.0;
-    }
-}
-```
-
 ### 2. Couche Métier
 
 L'interface `IMetier` définit la méthode de calcul.
